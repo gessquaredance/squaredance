@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      body {
+        animation: fadeIn 1s ease-in;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://cdn.pixabay.com/photo/2017/10/10/21/49/background-2832568_1280.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        color: #333;
+      }
+      .photo-section img {
+        animation: fadeIn 1.5s ease-in 0.5s both;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+      .container {
+        animation: fadeIn 1.2s ease-in 0.3s both;
+        max-width: 800px;
+        margin: 40px auto;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        display: flex;
+        gap: 20px;
+      }
+      .text-section {
+        animation: fadeIn 1.4s ease-in 0.6s both;
+        flex: 1;
+      }
+      .photo-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      h1 {
+        font-family: "Orbitron", sans-serif;
+        color: #c1440e;
+      }
+      p {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 1.1em;
+        line-height: 1.6;
+      }
+      .link-section {
+        animation: fadeIn 1.6s ease-in 0.9s both;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .link-section a {
+        font-size: 1.1em;
+        color: #c1440e;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .link-section a:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #555;
+        gap: 20px;
+      }
+      .footer-images {
+        display: flex;
+        gap: 20px;
+      }
+      .footer img {
+        width: 50px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+      .corner-image {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        width: 50px;
+        height: auto;
+        z-index: 1000;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square Dance</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-section">
+        <h1>Square Dance</h1>
+        <p>
+          The Square dance was a highlight of the fall, as we picked apples and ground them into apple cider with our like numbers and others in our group. The apple cider and donuts were delicious! Square dancing outshines them anyway, because it includes the chicken dance, for obvious reasons. But I also like doing the line dance and the hokey pokey, especially the “put your whole body in, put your whole body out” section, since you could do whatever you wanted to when you put your body in, like the worm! I also liked that we got to dress up like cowboys and wear hats in school. But this wouldn’t be square dancing without a SQUARE DANCE! It was so fun because we got to spin around in a circle super fast, and then switched directions. I am really sad that we only get to do this twice because it's awesome to do.
+        </p>
+      </div>
+      <div class="photo-section">
+        <img src="1.JPG" alt="Cutting Apples">
+        <img src="3.JPG" alt="Smashing Apples">
+      </div>
+    </div>
+    <div class="link-section">
+      <a href="gallery.html">Click here to see more pictures</a>
+    </div>
+    <div class="footer">
+      <div class="footer-images">
+        <a href="the_shift_is_3.html">
+          <img src="untitled.png" alt="Cowboy Chicken">
+        </a>
+        <a href="games.html">
+          <img src="game controller.jpg" alt="Game Controller">
+        </a>
+      </div>
+      <span>Made by Oliver B. #29 and Jack B. #28</span>
+      <span>Made in 2025</span>
+    </div>
+  </body>
+</html>

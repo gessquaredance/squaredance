@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Shift is 3</title>
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      animation: fadeIn 1s ease-in;
+      color: #333;
+    }
+    h1 {
+      font-family: "Orbitron", sans-serif;
+      color: #c1440e;
+      animation: fadeIn 1s ease-in 0.5s both;
+    }
+    p {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .caption {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 10px;
+      animation: fadeIn 1.2s ease-in 0.6s both;
+    }
+    .answer-box {
+      margin-top: 20px;
+      animation: fadeIn 1.4s ease-in 0.8s both;
+    }
+    .answer-box input[type="text"] {
+      padding: 10px;
+      font-size: 1em;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .submit-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #fff;
+      background-color: #c1440e;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      animation: fadeIn 1.6s ease-in 1s both;
+    }
+    .submit-button:hover {
+      background-color: #a1330c;
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: red;
+      animation: fadeIn 1.8s ease-in 1.2s both;
+    }
+    .back-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #fff;
+      background-color: #c1440e;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      animation: fadeIn 2s ease-in 1.4s both;
+    }
+    .back-button:hover {
+      background-color: #a1330c;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Shift is 3</h1>
+  <div class="answer-box">
+    <div class="caption">Frzerb Fklfnhq!</div>
+    <input type="text" id="answer" placeholder="Type your answer here..." />
+    <button class="submit-button" onclick="checkAnswer()">Submit</button>
+    <div id="message" class="message"></div>
+  </div>
+  <a href="index.html" class="back-button">Back to Main Page</a>
+
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById('answer').value.trim();
+      const message = document.getElementById('message');
+      if (answer === "Cowboy Chicken!") {
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley", "_blank");
+      } else {
+        message.textContent = "Wrong answer! Try again!";
+      }
+    }
+  </script>
+</body>
+</html>
