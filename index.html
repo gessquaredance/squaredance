@@ -88,6 +88,7 @@
       .footer-images {
         display: flex;
         gap: 20px;
+        position: relative;
       }
       .footer img {
         width: 50px;
@@ -95,6 +96,15 @@
         border-radius: 8px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         cursor: pointer;
+      }
+      .arrow-caption {
+        font-size: 0.8em;
+        color: #c1440e;
+        position: absolute;
+        top: -30px;
+        left: -200px;
+        transform: rotate(15deg);
+        text-align: center;
       }
       .corner-image {
         position: fixed;
@@ -127,6 +137,7 @@
     </div>
     <div class="footer">
       <div class="footer-images">
+        <div class="arrow-caption">Click here if you can't find anything → </div>
         <a href="the_shift_is_3.html">
           <img src="Untitled.png" alt="Cowboy Chicken">
         </a>
